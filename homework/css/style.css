@@ -39,6 +39,7 @@ input, button {
     .header-tel {
         width: 100%;
         text-align: center;
+        padding-bottom: 0;
     }
 }
 .header-user {
