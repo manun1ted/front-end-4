@@ -1,0 +1,57 @@
+html {
+   font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header-top {
+    background-color: #2b2b2b;
+}
+.header-user, .header-tel {
+    padding: 5px 0;
+}
+.header-tel {
+    color: #7f7f7f;
+    font-size: 0.875rem;
+    line-height: 1.85;
+    font-weight: 300;
+    text-decoration: none;
+}
+.header-user a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.85;
+    font-weight: 400;
+}
+.header-middle {
+    background-color: #232323;
+}
+.header-middle form {
+    border: 1px solid #323232;
+    float: right;
+}
+.header-middle button {
+    padding: 0;
+    width: 54px;
+    height: 44px;
+    background: transparent url(../img/search.png) center center no-repeat;
+    border: none;
+}
+.header-logo, .header-middle form {
+    margin: 30px 0 26px;
+}
+.header-search::placeholder, .header-search {
+    color: #666666;
+    font-weight: 200;
+    font-size: 0.8125rem;
+    line-height: 1.85;
+}
+.header-search {
+    width: 200px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px 60px 10px 20px;
+}
