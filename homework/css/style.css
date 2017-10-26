@@ -13,7 +13,7 @@ body {
 li {
     list-style: none;
     position: relative;
-    padding: 15px 13px 15px 50px;
+    padding: 15px 13px 14px 50px;
     background-color: #ffffff;
     counter-increment: lists;
 }
