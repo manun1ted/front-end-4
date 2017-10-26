@@ -1,0 +1,42 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #282828;
+    background-color: #555555;
+}
+body {
+    width: 920px;
+    margin: 0 auto;
+    counter-reset: lists;
+}
+li {
+    list-style: none;
+    position: relative;
+    padding: 15px 13px 15px 50px;
+    background-color: #ffffff;
+    counter-increment: lists;
+}
+li:nth-child(odd) {
+    background-color: #cccccc;
+}
+li:before {
+    content: counter(lists);
+    font-family: "Times New Roman";
+    font-size: 24px;
+    color: #fff;
+    width: 48px;
+    text-align: center;
+    background: #ff5353;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 30px;
+}
+li:first-child:before {
+    padding-top: 64px;
+}
+li:nth-child(odd):before {
+    background-color: #cc4242;
+}
