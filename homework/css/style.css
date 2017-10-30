@@ -73,3 +73,28 @@ html {
     padding: 10px 20px;
     display: inline-block;
 }
+.header-nav .active, .header-nav a:hover {
+    color: #be926f;
+}
+.header-bag {
+    background: url("../img/bag.png") center center no-repeat;
+    width: 17px;
+    height: 22px;
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+}
+.header-bag::before {
+    content: '2';
+    font-size: 0.75rem;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #be926f;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+    right: -8px;
+}
