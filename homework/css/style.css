@@ -1,7 +1,7 @@
 html {
-    font-family: Arial, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.125rem;
     color: #282828;
     background-color: #555555;
 }
@@ -22,20 +22,19 @@ li:nth-child(odd) {
 }
 li:before {
     content: counter(lists);
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
     font-size: 24px;
     color: #fff;
     width: 48px;
     text-align: center;
     background: #ff5353;
     position: absolute;
-    left: 0;
     top: 0;
     bottom: 0;
-    padding-top: 30px;
-}
-li:first-child:before {
-    padding-top: 64px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 li:nth-child(odd):before {
     background-color: #cc4242;
