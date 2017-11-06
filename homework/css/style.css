@@ -1,6 +1,6 @@
 html {
     font-family: 'Montserrat', sans-serif;
-
+    font-size: 16px;
 }
 body {
     min-width: 320px;
@@ -21,14 +21,15 @@ input, button {
 .header-user, .header-tel {
     padding: 5px 0;
 }
-.header-tel {
+.header-tel a {
     display: inline-block;
     color: #7f7f7f;
     font-size: 0.875rem;
     line-height: 1.85;
     font-weight: 300;
-    text-decoration: none;
-
+}
+.header-tel:hover {
+    text-decoration: underline;
 }
 .header-user {
     text-align: right;
@@ -48,6 +49,9 @@ input, button {
     color: #3b3b3b;
     font-size: 0.75rem;
 }
+
+/*-------------------------------*/
+
 .header-middle form {
     border: 1px solid #323232;
     float: right;
@@ -55,12 +59,12 @@ input, button {
 .header-logo {
     display: inline-block;
 }
-.col-md-6 {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 .header-logo, .header-middle form {
     margin: 30px 0 26px;
+}
+.col-sm-6 {
+    padding-left: 0;
+    padding-right: 0;
 }
 .header-search::placeholder, .header-search {
     color: #666666;
@@ -73,7 +77,7 @@ input, button {
     color: white;
     background-color: transparent;
     border: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 .header-middle button {
     padding: 0;
@@ -86,6 +90,30 @@ input, button {
     display: inline-block;
     vertical-align: top;
 }
+@media (max-width: 768px) {
+        .header-tel {
+            padding-bottom: 0;
+        }
+        .header-tel, .header-user, .header-logo {
+            display: block;
+            text-align: center;}
+    .header-middle form {
+            float: none;
+            position: relative;
+            font-size: 0;
+        }
+        .header-search {
+            width: 100%;
+        }
+        .header-middle button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+}
+
+/*---------------------*/
+
 .header-nav li {
     display: inline-block;
 }
@@ -96,9 +124,6 @@ input, button {
     padding: 0;
     list-style: none;
     margin-left: -20px;
-}
-.col-md-10 {
-    padding-left: 0;
 }
 .header-nav li+li {
     margin-left: 10px;
@@ -111,9 +136,22 @@ input, button {
     line-height: 1.5;
     padding: 20px 20px;
 }
+.col-sm-10 {
+    padding-left: 0;
+}
 .header-nav .active, .header-nav a:hover {
     color: #be926f;
 }
+@media (max-width: 992px) {
+        .header-nav li {
+            display: block;
+        }
+        .header-nav li + li {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+}
+
 .header-bag {
     background: url("../img/bag.png") center center no-repeat;
     width: 17px;
@@ -122,55 +160,18 @@ input, button {
     padding: 10px;
     text-decoration: none;
 }
-.col-md-2 {
-    padding-right: 0px;
-}
 .header-bag::before {
     content: '2';
     font-size: 0.75rem;
     width: 18px;
     height: 18px;
+    color: #232323;
     line-height: 18px;
     text-align: center;
     background-color: #be926f;
     display: inline-block;
     border-radius: 50%;
     position: relative;
-    top: -17px;
-    right: -2px;
-}
-@media (max-width: 992px) {
-    .header-user, .header-tel,
-    .header-logo {
-        display: block;
-        float: none;
-        text-align: center;
-    }
-    .header-tel {
-        padding-bottom: 0;
-    }
-    .header-search, .header-middle form {
-        float: none;
-    }
-    .header-middle button {
-        float: right;
-    }
-}
-
-@media (max-width: 523px) {
-    .header-nav li {
-        display: block;
-        padding-bottom: 10px;
-    }
-    .header-nav li+li {
-        margin: 0;
-    }
-    .header-nav ul {
-        text-align: center;
-    }
-}
-@media (max-width: 772px) {
-    .col-md-2 {
-        padding-right: 15px;
-    }
+    top: -18px;
+    right: -3px;
 }
