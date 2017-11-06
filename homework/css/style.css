@@ -96,19 +96,25 @@ input, button {
         }
         .header-tel, .header-user, .header-logo {
             display: block;
-            text-align: center;}
-    .header-middle form {
+            text-align: center;
+        }
+        .header-middle-form {
             float: none;
+            display: inline-block;
             position: relative;
-            font-size: 0;
         }
         .header-search {
-            width: 100%;
+            width: 80%;
         }
+
         .header-middle button {
             position: absolute;
             top: 0;
             right: 0;
+        }
+        .header nav li {
+            text-align: center;
+            padding-bottom: 5px;
         }
 }
 
@@ -151,7 +157,6 @@ input, button {
             margin-top: 10px;
         }
 }
-
 .header-bag {
     background: url("../img/bag.png") center center no-repeat;
     width: 17px;
