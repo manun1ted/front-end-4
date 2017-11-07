@@ -90,33 +90,7 @@ input, button {
     display: inline-block;
     vertical-align: top;
 }
-@media (max-width: 768px) {
-        .header-tel {
-            padding-bottom: 0;
-        }
-        .header-tel, .header-user, .header-logo {
-            display: block;
-            text-align: center;
-        }
-        .header-middle-form {
-            float: none;
-            display: inline-block;
-            position: relative;
-        }
-        .header-search {
-            width: 80%;
-        }
 
-        .header-middle button {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .header nav li {
-            text-align: center;
-            padding-bottom: 5px;
-        }
-}
 
 /*---------------------*/
 
@@ -179,4 +153,41 @@ input, button {
     position: relative;
     top: -18px;
     right: -3px;
+}
+@media (max-width: 767px) {
+    .header-tel {
+        padding-bottom: 0;
+    }
+    .header-tel, .header-user, .header-logo {
+        display: block;
+        text-align: center;
+    }
+    .header-middle form {
+        float: none;
+        position: relative;
+        margin: 0 auto;
+    }
+    .header-search {
+        width: 90%;
+    }
+    .header-middle button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .header-nav {
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+    .header-middle-searchform {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-bag {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
 }
