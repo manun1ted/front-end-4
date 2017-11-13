@@ -22,8 +22,7 @@ function averageNumber(a, b) {
 function numberToDegree(a, b) {
     if (a && b > 0) {
         var x = a;
-        var i;
-        for (i = 1; i < b; i++) {
+        for (var i = 1; i < b; i++) {
             a = a * x;
         }
         return a;
