@@ -10,27 +10,25 @@ function minNumber(a, b, c) {
         return c;
     }
 }
-/------------------------------------/
+
 
 function averageNumber(a, b) {
-    var c = (a + b) / 2;
-    return c;
+    return (a + b) / 2;
 }
 
-/------------------------------------/
+
 
 function numberToDegree(a, b) {
     if (a && b > 0) {
-        var x = a;
+        var pow = a;
         for (var i = 1; i < b; i++) {
-            a = a * x;
+            a = a * pow;
         }
         return a;
     } else if (a > 0 && b !== 0) {
-        var b = 2;
-        var x = a * a;
-        return x;
+        pow *= a;
+        return pow;
     } else if (b === 0) {
-        return x = 1;
+        return 1;
     }
 }
