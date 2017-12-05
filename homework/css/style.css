@@ -1,0 +1,163 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-nav li {
+    display: inline;
+    list-style: none;
+}
+.header-top .container{
+    width: 994px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top {
+    height: 52px;
+    width: 100%;
+}
+
+.header-top-logo a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.05em;
+}
+.header-top-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-top-logo span {
+    padding-left: 33px;
+    padding-right: 19px;
+}
+.header-nav li+li {
+    margin-left: 32px;
+}
+.header-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 0.05em;
+}
+.header-nav a:hover {
+    border-top: 1px solid #4c76ff;
+    padding-top: 15px;
+}
+.header {
+    background: url('../img/bgimage.png');
+    height: 701px;
+
+}
+
+
+
+/*--------HEADER_BOTTOM--------*/
+
+.header-bottom {
+    text-align: center;
+    margin-top: 260px;
+    height: 650px;
+    width: 100%;
+}
+.main-logo {
+    color: #ffffff;
+    font-size: 62px;
+    font-weight: 900;
+}
+.main-logo span {
+    color: #4c76ff;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #eeedee;
+    margin-top: 0;
+}
+h1 span{
+    color: #4c76ff;
+}
+.header-bottom p {
+    font-size: 18px;
+    font-weight: 100;
+    color: #cbcbcb;
+}
+.header-bottom p span {
+    color: #4960b3;
+}
+.line {
+    overflow: hidden;
+}
+.line:before,
+.line:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 2px;
+    background: #4c76ff;
+}
+.line:before {
+    margin-right: 40px;
+}
+.line:after {
+    margin-left: 40px;
+}
+.header-bottom-socials {
+    margin: 0 auto;
+}
+.header-bottom-socials{
+    padding-top: 75px;
+}
+.header-bottom-socials a {
+    padding-right: 15px;
+}
+.header-bottom-socials a:hover {
+    color: #ffffff;
+}
+
+
+
+/*------FEATURES-------*/
+.features-top {
+    height: 432px;
+    background-color: #efefef;
+    margin-top: 0;
+    text-align: center;
+}
+h2.features-title {
+    padding-top: 80px;
+    font-size: 28px;
+    font-weight: 900;
+    color: #4c76ff;
+    margin-top: 0;
+}
+.features-top a {
+    cursor: default;
+}
+.line-2 {
+    overflow: hidden;
+}
+.line-2:before,
+.line-2:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: 1px;
+    background: #d7dadc;
+}
+.line-2:before {
+    margin-right: 14px;
+}
+.line-2:after {
+    margin-left: 14px;
+}
