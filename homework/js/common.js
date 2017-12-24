@@ -1,3 +1,5 @@
+'use strict'
+
 $(function(){
     $('.slider').slick({
         infinite: true,
@@ -9,13 +11,11 @@ $(function(){
 });
 
 
-$(document).ready(function(){
-
-    var map = new GMap2(document.getElementById('map'));
-
-    var burnsvilleMN = new GLatLng(44.797916,-93.278046);
-
-    map.setCenter(burnsvilleMN, 8);
-
-});
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 49.456, lng: 27.006},
+        zoom: 8
+    });
+}
 
