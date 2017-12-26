@@ -162,18 +162,16 @@
         </div>
     </div>
 </div>
-
 <div class="works-images">
     <ul>
         <li>
-            <img src="img/pic1.jpg" alt="">
+            <img src="img/pic1.jpg" class="example" alt="">
             <a href="#" class="works-images-link">
                 <img src="img/eye.png" alt="">
                 <h5>Labore et dolore magnam</h5>
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic2.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -182,7 +180,6 @@
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic3.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -191,7 +188,6 @@
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic4.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -200,7 +196,6 @@
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic5.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -209,7 +204,6 @@
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic6.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -218,7 +212,6 @@
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic7.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -227,7 +220,6 @@
                 <p>Photography</p>
             </a>
         </li>
-
         <li>
             <img src="img/pic8.jpg" alt="">
             <a href="#" class="works-images-link">
@@ -247,41 +239,63 @@
             doloremque laudantium, totam rem aperiam, eaque</br> ipsa quae ab illo inventore</p>
 
         <div class="slider">
-            <div>
-                <img src="img/John.jpg" alt="">
-                <a href="#">John Filmr Doe</a>
-                <p>Managing Director</p>
-            </div>
+
+                <div class="team-info-content">
+                    <div class="team-info-text">
+                        <p>Nemo enim ipsam </br> voluptatem quia voluptas</p>
+                        <span>sit aspernatur aut odit aut</br> fugit, sed quia consequuntur</br> magni
+                          dolores eos qui ratione</br> voluptatem.
+                        </span>
+                        <div>
+                            <a href="#"><img src="img/twitterw.png" class="tw" width="20" height="16" alt=""></a>
+                            <a href="#"><img src="img/facebookw.png" class="fb" width="10" height="18" alt=""></a>
+                            <a href="#"><img src="img/googlew.png" class="gl" width="18" height="18" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="img/John.jpg" alt="">
+                        <a href="#">John Filmr Doe</a>
+                        <p>Managing Director</p>
+                    </div>
+                </div>
+
+
             <div>
                 <img src="img/Chystine.jpg" alt="">
                 <a href="#">Chystine Hineu</a>
                 <p>Lead Designer</p>
             </div>
+
             <div>
                 <img src="img/Martin.jpg" alt="">
                 <a href="#">Martin Matrone</a>
                 <p>Lead Developer</p>
             </div>
+
             <div>
                 <img src="img/Steve.jpg" alt="">
                 <a href="#">Steve Flaulkin</a>
                 <p>Sr. UI Designer</p>
             </div>
+
             <div>
                 <img src="img/John.jpg" alt="">
                 <a href="#">John Filmr Doe</a>
                 <p>Managing Director</p>
             </div>
+
             <div>
                 <img src="img/Chystine.jpg" alt="">
                 <a href="#">Chystine Hineu</a>
                 <p>Lead Designer</p>
             </div>
+
             <div>
                 <img src="img/Martin.jpg" alt="">
                 <a href="#">Martin Matrone</a>
                 <p>Lead Developer</p>
             </div>
+
             <div>
                 <img src="img/Steve.jpg" alt="">
                 <a href="#">Steve Flaulkin</a>
@@ -338,12 +352,14 @@
                 </div>
             </div>
             <div class="contacts-feedback">
-                <form action="#">
+                <form class="feedback-form" action="#" >
                     <div class="contacts-feedback-title">Say hello!</div>
                     <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email">
                     <textarea type="text" name="message" placeholder="Message"></textarea>
-                    <button type="submit"><img src="img/envelope.png" alt="">&nbsp&nbsp Send message</button>
+                    <button type="submit" class="button-content"><img src="img/envelope.png" alt="">&nbsp&nbsp Send
+                        message
+                    </button>
                 </form>
             </div>
             <div class="contacts-socials">
@@ -372,7 +388,7 @@
                 <div class="footer-subscribe-title">Subscribe</div>
                 <div class="footer-subscribe-form">
                     <form class="subscribe-form">
-                        <input type="text" name="sub">
+                        <input type="email" name="subscribe">
                         <button type="submit"><img src="img/arrow.png" alt=""></button>
                     </form>
                     <p>eusmod tempor incididunt ut labore et</br> dolore magna aliqua.</p>
@@ -403,6 +419,8 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn69SMQCXgzSUYUr6qKH99qbFq_eZHyvg&callback=initMap" async
         defer></script>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/common.js"></script>
 </body>
