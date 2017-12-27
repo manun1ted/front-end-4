@@ -49,3 +49,33 @@ $('.subscribe-form').validate({
 });
 
 
+var status = 0;
+$(window).scroll(function () {
+
+    var oTop = $('.facts').offset().top - window.innerHeight;
+    if (status == 0 && $(window).scrollTop() > oTop) {
+        $('#hours').animateNumber({
+            number: 3200
+            },
+            3500
+        );
+        $('#clients').animateNumber({
+            number: 120
+        },
+            3500
+        );
+        $('#projects').animateNumber({
+            number: 360
+        },
+            3500
+        );
+        $('#awards').animateNumber({
+            number: 42
+        },
+            3500
+        );
+        status = 1;
+    }
+});
+
+
