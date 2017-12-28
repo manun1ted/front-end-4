@@ -39,16 +39,6 @@ $('.feedback-form').validate({
 });
 
 
-$('.subscribe-form').validate({
-    rules: {
-        subscribe: {
-            email: true,
-            required: true
-        }
-    }
-});
-
-
 var status = 0;
 $(window).scroll(function () {
 

@@ -21,7 +21,7 @@ html {
 .header-top {
     height: 52px;
     width: 100%;
-    background-color: rgba(16, 22, 54, 0.2);
+    background-color: rgba(33, 53, 124, 0.4);
     position: fixed;
     z-index: 3;
 }
@@ -580,16 +580,17 @@ p.desc {
     background-color: rgba(85, 125, 255, .9);
     padding-top: 22px;
     position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
     z-index: 1;
-    width: 210px;
+    width: 224px;
     height: 186px;
     color: #fff;
 }
 .slider-box:hover .team-info-text {
     display: inline-block;
 }
-
-
 .team-info-text div a {
     display: inline-block;
     padding-right: 15px;
@@ -606,12 +607,38 @@ p.desc {
     width: 18px;
     height: 18px;
 }
+.twitter-box,
+.facebook-box,
+.google-box {
+    width: 35px;
+    height: 35px;
+    background-color: #3354ae;
+}
+.twitter-box a {
+    padding-left: 7.5px;
+    padding-top: 9.5px;
+}
+.facebook-box a {
+    padding-top: 8px;
+    padding-left: 12px;
+}
+.google-box a {
+    padding-top: 8px;
+    padding-left: 10px;
+}
+.twitter-box:hover,
+.facebook-box:hover,
+.google-box:hover {
+    background-color: #4c76ff;
+}
 
 .team-info-text p {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 13.2px;
     color: #fff;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 .team-info-text span {
     font-family: "Open Sans", sans-serif;
@@ -623,6 +650,7 @@ p.desc {
     justify-content: space-around;
     padding-top: 15px;
 }
+
 
 
 
@@ -780,21 +808,24 @@ p.desc {
     line-height: 20px;
     color: #062033;
     text-align: left;
+    padding-top: 3px;
     padding-bottom: 55px;
+    width: 100%;
 }
 .contacts-feedback form {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .contacts-feedback input {
     outline: none;
-    width: 48%;
+    width: 100%;
     padding: 20px 0;
     border: none;
     border-bottom: solid 1px #c2c5c9;
 }
-.contacts-feedback input:nth-child(2) {
-    margin-right: 3%;
-}
+
 .contacts-feedback textarea {
     padding: 20px 0;
     height: 54px;
@@ -815,11 +846,24 @@ button {
     line-height: 20px;
     cursor: pointer;
 }
-.button-content {
-    float: right;
-}
+
 .button-content:hover {
     color: #009ceb;
+}
+.field-wrap {
+    position: relative;
+    width: 48%;
+    margin: 5px;
+}
+#field-message {
+    width: 98%;
+}
+
+label.error {
+    position: absolute;
+    color: red;
+    top: 0;
+    right: 10px;
 }
 .contacts-socials {
     display: flex;
@@ -883,7 +927,7 @@ button {
     vertical-align: middle;
     color: #fff;
     font-size: 14px;
-
+    font-family: "Open Sans", sans-serif;
 }
 .subscribe-form button {
     width: 28px;
